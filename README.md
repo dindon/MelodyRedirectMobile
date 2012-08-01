@@ -47,16 +47,16 @@ $loader->registerNamespaces(array(
 
 Dans le fichier `vendor/bundles/Melody/Resources/config/services.yml`, vous avez 2 paramètres que vous pouvez configurer.
 
-   `mrm.mobile` -> correspond à la *ROUTE* ou à *l'URL* de redirection pour les mobiles
+   `mrm.mobile` -> correspond à la **ROUTE** ou à **l'URL** de redirection pour les mobiles
    
-   `mrm.computer` -> correspond à la *ROUTE* ou à *l'URL* de redirection pour les ordinateurs
+   `mrm.computer` -> correspond à la **ROUTE** ou à **l'URL** de redirection pour les ordinateurs
   
-Si `mrm.computer` est vide, les ordinateurs auront accés au page mobile, sinon ils seront redirigés vers la *ROUTE* ou *l'URL* saisie lors d'une connexion à une page mobile.
+Si `mrm.computer` est vide, les ordinateurs auront accés aux pages mobiles, sinon ils seront redirigés vers la **ROUTE** ou **l'URL** saisie lors de leurs connexion aux pages mobiles.
 
 ### Etape 4: Gestion du routing mobile
 
 Lorsque le site mobile et le site classique sont hébergés dans la même applications, il va vous falloir dissocier vos routes correspondant au site internet classique et mobile.
-Pour dissocier les routes il suffit de rajouter une *option* à vos *routes* mobile.
+Pour dissocier les routes il suffit de rajouter une **option** à vos **routes** mobile.
 
 ``` yml
     // exemple avec un fichier routing.yml
@@ -67,8 +67,7 @@ Pour dissocier les routes il suffit de rajouter une *option* à vos *routes* mob
         mobile: true
 ```
 
-Et voilà vos redirections ce feront toutes seuls.
-Si vous avez rempli les deux paramètres présentés lors de l'étape 3, le mobile auront accés que au route possèdant l'option *mobile: true* et les ordinateurs que au autre.
+Si vous avez rempli les deux paramètres présentés lors de l'étape 3, les mobiles auront accés aux routes possèdant l'option **mobile: true** et les ordinateurs aux autres.
 
 
    
