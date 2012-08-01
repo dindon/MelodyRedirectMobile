@@ -63,7 +63,7 @@ Lorsque le site mobile et le site classique sont hébergés dans la même applic
 Pour dissocier les routes il suffit de rajouter une **option** à vos **routes** mobile.
 
 ``` yml
-// exemple avec un fichier routing.yml
+# exemple avec un fichier routing.yml
 AppMonBundle_home_mobile:
    pattern:  /m
    defaults: { _controller: AppMonBundle:Controller:method }
