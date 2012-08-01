@@ -1,0 +1,19 @@
+parameters:
+    # Les variables ci-dessous accepte aussi bien des ROUTES que des URL
+    # exemple avec une url : 'http://www.google.fr'
+    # exemple avec une route : 'MonAppMonBundle_home'
+    mrm.mobile: 'MelodyRedirectMobileBundle_mobile'
+    mrm.computer: 'MelodyRedirectMobileBundle_homepage'
+    # Si mrm.computer est vide, les ordinateurs auront accés au page mobile
+    # Sinon ils seront redirigés vers la ROUTE ou l'URL saisie
+
+services:
+    mrm.mdetect:
+        class: Melody\RedirectMobileBundle\Detector\Mdetect
+
+    mrm.detector:
+        class: Melody\RedirectMobileBundle\Detector\Detector
+        arguments: [@mrm.mdetect, @router, @request, %mrm.mobile%, %mrm.computer%]
+        scope: request
+        tags:
+            - { name: kernel.event_listener, priority: -255, event: kernel.request, method: checkRoad }
