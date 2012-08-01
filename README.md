@@ -5,10 +5,10 @@ Bundle pour la gestion de vos redirections mobiles.
 
 ## Installation & Configuration
 
-  1. Download MelodyRedirectMobile
-  2. Activation du Bundle
-  3. Configuration des redirections
-  4. Gestion du routing mobile
+    1. Download MelodyRedirectMobile
+    2. Activation du Bundle
+    3. Configuration des redirections
+    4. Gestion du routing mobile
 
 ### Etape 1: Download MelodyRedirectMobile
 
