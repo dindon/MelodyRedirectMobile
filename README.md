@@ -31,7 +31,7 @@ public function registerBundles()
 }
 ```
 
-Ensuite dans le fichier `app/autoload.php`:
+Ensuite dans le fichier `app/autoLoad.php`:
 
 ``` php
 <?php
@@ -47,8 +47,9 @@ $loader->registerNamespaces(array(
 
 Dans le fichier `vendor/bundles/Melody/Resources/config/services.yml`, vous avez 2 paramètres que vous pouvez configurer.
 
-   Le premier: `mrm.mobile` -> correspond à la *ROUTE* ou à *l'URL* de redirection pour les mobiles
-   Le deusième: `mrm.computer` -> correspond à la *ROUTE* ou à *l'URL* de redirection pour les ordinateurs
+   `mrm.mobile` -> correspond à la *ROUTE* ou à *l'URL* de redirection pour les mobiles
+   
+   `mrm.computer` -> correspond à la *ROUTE* ou à *l'URL* de redirection pour les ordinateurs
   
 Si `mrm.computer` est vide, les ordinateurs auront accés au page mobile, sinon ils seront redirigés vers la *ROUTE* ou *l'URL* saisie lors d'une connexion à une page mobile.
 
