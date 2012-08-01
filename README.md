@@ -12,7 +12,7 @@ Bundle pour la gestion de vos redirections mobiles.
 
 ### Etape 1: Download MelodyRedirectMobile
 
-Télécharger le bundle et copier les dossier `vendor/bundles/Melody/RedirectMobileBundle`
+Télécharger le bundle et copier les dossiers et fichiers dans `vendor/bundles/Melody/RedirectMobileBundle`
 
 ### Etape 2: Activation du Bundle
 
